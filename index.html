@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/45ed642e10.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles/main.min.css">
+</head>
+<body>
+
+<header class="header container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary col-lg-3">
+        <div class="container-fluid navigation-container">
+            <div class="logo">
+                <a href="#" class="navbar-brand"><img src="src/assets/icons/casio-logo.svg" alt="logo"></a>
+                <em>Ukraine</em>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle bold" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Продукция
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Часы <span class="material-symbols-outlined nav-icon">chevron_right</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Научные и графические калькуляторы <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Карманные, настольные и печатающие калькуляторы <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Мобильные терминалы сбора данных <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Музыкальные инструменты <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Мобильные терминалы сбора данных <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Мультимедийные проекторы <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle bold" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Поддержка
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Часто задаваемые вопросы <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Руководства пользователей <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Загрузить <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Windows / Mac OS <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">iOS / Android <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Сервисные центры <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Гарантийные талоны <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Задать вопрос по ремонту изделия <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                            <li><a class="dropdown-item" href="#">Оценить работу Сервисного центра <span
+                                    class="material-symbols-outlined nav-icon">chevron_right</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bold" href="#">Интернет-магазин</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О компании</a>
+                    </li>
+                    <li class="nav-item dropdown form">
+                        <a class="nav-link dropdown-toggle" href="#">
+                            <img src="src/assets/icons/search.svg" alt="search icon">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <form class="d-flex form-search" role="search">
+                                    <input class="form-input" type="search" placeholder="Поиск" aria-label="Search">
+                                    <button class="form-button" type="submit">Поиск</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="carousel">
+    <img src="src/assets/img/carousel/2069.jpg" alt="Piano">
+    <img src="src/assets/img/carousel/2139.jpg" alt="G-SHOCk 2100">
+    <img src="src/assets/img/carousel/1959.jpg" alt="BABY-G">
+    <img src="src/assets/img/carousel/1993.jpg" alt="Casio vintage">
+    <img src="src/assets/img/carousel/1816.jpg" alt="PRO TREK">
+    <img src="src/assets/img/carousel/1396.jpg" alt="CELVIANO">
+</div>
+
+<section class="product">
+    <div class="container product-container">
+        <h2 class="product-title">Продукция</h2>
+        <div class="row">
+            <div class="col-lg-3 card">
+                <a href="#" class="card-link">
+                    <div class="card-image"><img src="src/assets/img/panel_watch_ohne1.png" alt="Watch"></div>
+                    <div class="card-partition"><p>Часы</p></div>
+                </a>
+            </div>
+            <div class="col-lg-3 card">
+                <a href="#" class="card-link">
+                    <div class="card-image"><img src="src/assets/img/panel_sgr1.png" alt="Phone"></div>
+                    <div class="card-partition"><p>Научные и <br>графические <br>калькуляторы</p></div>
+                </a>
+            </div>
+            <div class="col-lg-3 card">
+                <a href="#" class="card-link">
+                    <div class="card-image"><img src="src/assets/img/panel_calculator_for_intl1.png" alt="Calculator">
+                    </div>
+                    <div class="card-partition"><p>Карманные, <br>настольные и <br>печатающие <br>калькуляторы</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 card">
+                <a href="#" class="card-link">
+                    <div class="card-image"><img src="src/assets/img/panel_emi1.png" alt="Piano"></div>
+                    <div class="card-partition"><p>Музыкальные <br>инструменты</p></div>
+                </a>
+            </div>
+            <div class="col-lg-3 card">
+                <a href="#" class="card-link">
+                    <div class="card-image"><img src="src/assets/img/panel_projector1.png" alt="Projector"></div>
+                    <div class="card-partition"><p>Мультимедийные <br>проекторы</p></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="news">
+    <div class="container news-container">
+        <h2 class="news-title">Новости</h2>
+        <hr>
+        <a href="#" class="news-link">
+            <div class="news-item row col-lg-12">
+                <div class="item-heading col-lg-3">01.03.2022</div>
+                <div class="item-body col-lg-8">
+                    <strong>G-SHOCK Utility Black</strong>
+                    <br>
+                    WITHSTAND WHAT COMES YOUR WAY
+                </div>
+                <span class="material-symbols-outlined grey-icon">chevron_right</span>
+            </div>
+        </a>
+        <hr class="dash">
+        <a href="#" class="news-link">
+            <div class="news-item row col-lg-12">
+                <div class="item-heading col-lg-3">01.03.2022</div>
+                <div class="item-body col-lg-8">
+                    <strong>Casio to Release the First MR-G to Feature the Iconic Design of the Original
+                        G-SHOCK</strong>
+                </div>
+                <span class="material-symbols-outlined grey-icon">chevron_right</span>
+            </div>
+        </a>
+        <hr class="dash">
+        <a href="#" class="news-link">
+            <div class="news-item row col-lg-12">
+                <div class="item-heading col-lg-3">24.02.2022</div>
+                <div class="item-body col-lg-8">
+                    <strong>Casio to Release Standout G-SHOCK in Black Full-Metal Design</strong>
+                    <br>
+                    Featuring Intricate Combination of Multiple Finishes
+                </div>
+                <span class="material-symbols-outlined grey-icon">chevron_right</span>
+            </div>
+        </a>
+        <hr class="dash">
+        <a href="#" class="news-link">
+            <div class="news-item row col-lg-12">
+                <div class="item-heading col-lg-3">15.02.2022</div>
+                <div class="item-body col-lg-8">
+                    <strong>Casio to Release PRO TREK with Bio-Mass Plastics</strong>
+                </div>
+                <span class="material-symbols-outlined grey-icon">chevron_right</span>
+            </div>
+        </a>
+        <hr class="dash">
+        <a href="#" class="news-link">
+            <div class="news-item row col-lg-12">
+                <div class="item-heading col-lg-3">09.02.2022</div>
+                <div class="item-body col-lg-8">
+                    <strong>Casio to Release Limited Edition EDIFICE in Nissan &amp; NISMO Team Colors</strong>
+                    <br>
+                    Watch Engraved with Traditional Nissan & NISMO Ace Number, 23
+                </div>
+                <span class="material-symbols-outlined grey-icon">chevron_right</span>
+            </div>
+        </a>
+        <hr class="dash">
+        <a href="#" class="news-button">
+            <span class="material-symbols-outlined blue-icon">chevron_right</span>
+            <strong>РАЗВЕРНУТЬ</strong>
+        </a>
+    </div>
+</section>
+
+<section class="theme">
+    <div class="container theme-container">
+        <h2 class="theme-title">Ссылки по теме</h2>
+        <hr>
+        <div class="row">
+            <a href="#" class="theme-link">
+                <div class="theme-card">
+                    <img src="src/assets/img/132.png" alt="Water protect">
+                    <p>Water protect</p>
+                </div>
+            </a>
+            <a href="#" class="theme-link">
+                <div class="theme-card">
+                    <img src="src/assets/img/130.png" alt="CELVIANO">
+                    <p>CELVIANO Grand Hybrid <i class="fa-solid fa-arrow-up-right-from-square ex-link"></i></p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<p class="sections-heading">Главная</p>
+
+<div class="sections">
+    <div class="container sections-container">
+        <div class="row sections-row">
+            <div class="col sections-column">
+                <ul class="sections-list">
+                    <li class="sections-item margin-bottom-26"><a href="#" class="italic">Продукция</a></li>
+                    <li class="sections-item"><a href="#">Часы</a></li>
+                    <li class="sections-item"><a href="#">Музыкальные инструменты</a></li>
+                    <li class="sections-item"><a href="#">Научные и графические калькуляторы</a></li>
+                    <li class="sections-item"><a href="#">Карманные, настольные и печатающие калькуляторы</a></li>
+                    <li class="sections-item"><a href="#">EXILIM Фотокамеры</a></li>
+                    <li class="sections-item"><a href="#">Мультимедийные проекторы</a></li>
+                    <li class="sections-item"><a href="#">Мобильные терминалы сбора данных</a></li>
+                </ul>
+            </div>
+            <div class="col sections-column">
+                <ul class="sections-list">
+                    <li class="sections-item margin-bottom-26"><a href="#" class="italic">Поддержка</a></li>
+                    <li class="sections-item"><a href="#">Часто Задаваемые Вопросы</a></li>
+                    <li class="sections-item"><a href="#">Руководства пользователей</a></li>
+                    <li class="sections-item"><a href="#">Загрузить</a></li>
+                    <li class="sections-item"><a href="#">Windows / Mac OS</a></li>
+                    <li class="sections-item"><a href="#">iOS / Android</a></li>
+                    <li class="sections-item"><a href="#">Сервисные центры</a></li>
+                    <li class="sections-item"><a href="#">Гарантийные талоны</a></li>
+                    <li class="sections-item"><a href="#">Задать вопрос по ремонту изделия</a></li>
+                </ul>
+            </div>
+            <div class="col sections-column">
+                <ul class="sections-list">
+                    <li class="sections-item margin-bottom-26"><a href="#" class="italic">Новости</a></li>
+                    <li class="sections-item"><a href="#" class="bold italic icon">Интернет-магазин <i
+                            class="fa-solid fa-arrow-up-right-from-square ex-link"></i></a></li>
+                    <li class="sections-item"><a href="#" class="italic">О компании</a></li>
+                </ul>
+            </div>
+            <div class="col sections-search">
+                <form class="d-flex form-search" role="search">
+                    <i class="fa fa-solid fa-magnifying-glass" style="color: #02369b;"></i>
+                    <input class="form-input search-ico" type="search" placeholder="Поиск" aria-label="Search">
+                    <button class="form-button" type="submit">Поиск</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer container-fluid">
+    <div class="footer-container">
+        <div class="footer-links">
+            <ul class="footer-list">
+                <li class="footer-item"><a href="#" class="footer-brand"><img class="logo-img"
+                                                                              src="src/assets/icons/casio-logo.svg"
+                                                                              alt="logo"></a> <span class="copyright">© 2023 CASIO Europe GmbH</span>
+                </li>
+                <li class="footer-item"><a href="#" class="footer-link">Контактные данные</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Политика конфиденциальности</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Правила использования</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Карта сайта</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Настройки cookie</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Положение об использовании файлов cookie</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-select-country">
+            <span class="language"><em>Ukraine</em></span>
+            <span class="material-symbols-outlined language-ico">language</span>
+            <span class="select-language">Select country or region</span>
+        </div>
+    </div>
+</footer>
+
+
+<script src="src/js/auth.js"></script>
+<script src="src/js/script.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.container {
+  margin: 80px auto;
+}
+.container .btn {
+  background: #003296;
+}
+.container .nav-pills .nav-link.active, .container .nav-pills .show > .nav-link {
+  background: #003296;
+}
+
+/*# sourceMappingURL=auth.css.map */
